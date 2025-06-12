@@ -21,6 +21,10 @@ spec:
       name: ubuntu-client
     spec:
       containers:
+      # - name: ubuntu-client
+      #   image: michaelirey/ubuntu-with-tools
+      #   command: ["sleep", "infinity"]
+      #   imagePullPolicy: IfNotPresent
       - name: ubuntu-client
         image: deathstarbench/wrk2-client
         command:  ["/bin/sh"]
@@ -28,4 +32,8 @@ spec:
           - -c
           - sleep 365d
         imagePullPolicy: Always
+      - name: python
+        image: demisto/py3-tools:1.0.0.3728574
+        command: ["sleep", "infinity"]
+        imagePullPolicy: IfNotPresent
       restartPolicy: Always

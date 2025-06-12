@@ -55,6 +55,8 @@ function _M.ReadHomeTimeline()
   local cjson = require "cjson"
   local liblualongnumber = require "liblualongnumber"
 
+  ngx.log(ngx.INFO, "k8s_suffix: ", k8s_suffix)
+
   local req_id = tonumber(string.sub(ngx.var.request_id, 0, 15), 16)
   local tracer = bridge_tracer.new_from_global()
   local parent_span_context = tracer:binary_extract(

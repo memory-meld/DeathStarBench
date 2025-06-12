@@ -84,6 +84,7 @@ function TSocket:open()
   end
   local ok, err = self.handle:connect(self.host, self.port)
   if not ok then
+    ngx.log(ngx.ERR, 'TSocket:open() failed to connect to ', self.host, ':', self.port, ' - ', err)
     terror(TTransportException:new{
       message = 'Could not connect to ' .. self.host .. ':' .. self.port
         .. ' (' .. err .. ')'
