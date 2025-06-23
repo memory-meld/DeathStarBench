@@ -38,4 +38,11 @@ spec:
       containers:
       - name: compose-post-redis
         image: redis
+        env:
+        - name: GUEST_IMAGE
+          value: docker.io/library/redis:latest
+        - name: GUEST_PORT
+          value: "6379"
+        - name: K_REVISION
+          value: compose-post-redis-00001
       restartPolicy: Always

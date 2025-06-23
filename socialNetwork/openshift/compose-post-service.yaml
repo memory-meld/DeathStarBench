@@ -40,6 +40,13 @@ spec:
       containers:
       - name: compose-post-service
         image: deathstarbench/social-network-microservices
+        env:
+        - name: GUEST_IMAGE
+          value: docker.io/deathstarbench/social-network-microservices:latest
+        - name: GUEST_PORT
+          value: "9090"
+        - name: K_REVISION
+          value: compose-post-service-00001
         command: ["ComposePostService"]
         volumeMounts:
           - mountPath: /social-network-microservices/config/jaeger-config.yml

@@ -38,6 +38,13 @@ spec:
       containers:
       - name: user-service
         image: deathstarbench/social-network-microservices
+        env:
+        - name: GUEST_IMAGE
+          value: docker.io/deathstarbench/social-network-microservices:latest
+        - name: GUEST_PORT
+          value: "9090"
+        - name: K_REVISION
+          value: user-service-00001
         command: ["UserService"]
         volumeMounts:
           - mountPath: /social-network-microservices/config/jaeger-config.yml

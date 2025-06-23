@@ -38,4 +38,11 @@ spec:
       containers:
       - name: post-storage-memcached
         image: memcached
+        env:
+        - name: GUEST_IMAGE
+          value: docker.io/library/memcached:latest
+        - name: GUEST_PORT
+          value: "11211"
+        - name: K_REVISION
+          value: post-storage-memcached-00001
       restartPolicy: Always

@@ -40,6 +40,13 @@ spec:
       containers:
       - name: media-frontend
         image: yg397/media-frontend:xenial
+        env:
+        - name: GUEST_IMAGE
+          value: docker.io/yg397/media-frontend:xenial
+        - name: GUEST_PORT
+          value: "8080"
+        - name: K_REVISION
+          value: media-frontend-00001
         ports:
         - containerPort: 8080
         volumeMounts:

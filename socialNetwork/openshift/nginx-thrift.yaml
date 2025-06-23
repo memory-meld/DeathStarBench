@@ -43,6 +43,12 @@ spec:
         env:
         - name: fqdn_suffix
           value: .social-network.svc.cluster.local
+        - name: GUEST_IMAGE
+          value: docker.io/yg397/openresty-thrift:xenial
+        - name: GUEST_PORT
+          value: "8080"
+        - name: K_REVISION
+          value: nginx-thrift-00001
         ports:
         - containerPort: 8080
         volumeMounts:

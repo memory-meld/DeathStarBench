@@ -50,4 +50,10 @@ spec:
           value: "WRITE-HOME-TIMELINE-RABBITMQ"
         - name: RABBITMQ_DEFAULT_VHOST
           value: "/"
+        - name: GUEST_IMAGE
+          value: docker.io/library/rabbitmq:latest
+        - name: GUEST_PORT
+          value: "5672"
+        - name: K_REVISION
+          value: write-home-timeline-rabbitmq-00001
       restartPolicy: Always

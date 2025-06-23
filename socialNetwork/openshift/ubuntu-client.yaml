@@ -27,6 +27,13 @@ spec:
       #   imagePullPolicy: IfNotPresent
       - name: ubuntu-client
         image: deathstarbench/wrk2-client
+        env:
+        - name: GUEST_IMAGE
+          value: docker.io/deathstarbench/wrk2-client:latest
+        - name: GUEST_PORT
+          value: "8080"
+        - name: K_REVISION
+          value: ubuntu-client-00001
         command:  ["/bin/sh"]
         args:
           - -c
@@ -34,6 +41,13 @@ spec:
         imagePullPolicy: Always
       - name: python
         image: demisto/py3-tools:1.0.0.3728574
+        env:
+        - name: GUEST_IMAGE
+          value: docker.io/demisto/py3-tools:1.0.0.3728574
+        - name: GUEST_PORT
+          value: "8080"
+        - name: K_REVISION
+          value: ubuntu-client-python-00001
         command: ["sleep", "infinity"]
         imagePullPolicy: IfNotPresent
       restartPolicy: Always

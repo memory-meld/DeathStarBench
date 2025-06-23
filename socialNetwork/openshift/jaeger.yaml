@@ -73,4 +73,10 @@ spec:
           value: "9411"
         - name: JAEGER_AGENT_PORT
           value: "5775"
+        - name: GUEST_IMAGE
+          value: docker.io/jaegertracing/all-in-one:latest
+        - name: GUEST_PORT
+          value: "16686"
+        - name: K_REVISION
+          value: jaeger-agent-00001
       restartPolicy: Always

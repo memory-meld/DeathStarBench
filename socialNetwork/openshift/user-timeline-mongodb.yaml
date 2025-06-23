@@ -38,6 +38,13 @@ spec:
       containers:
       - name: user-timeline-mongodb
         image: mongo:4.4.6
+        env:
+        - name: GUEST_IMAGE
+          value: docker.io/library/mongo:4.4.6
+        - name: GUEST_PORT
+          value: "27017"
+        - name: K_REVISION
+          value: user-timeline-mongodb-00001
         volumeMounts:
           - name: my-data
             mountPath: "/data/db"
