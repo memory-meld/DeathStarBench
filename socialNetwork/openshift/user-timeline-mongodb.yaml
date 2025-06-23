@@ -35,6 +35,7 @@ spec:
         app: user-timeline-mongodb
       name: user-timeline-mongodb
     spec:
+      runtimeClassName: kata-fc
       containers:
       - name: user-timeline-mongodb
         image: mongo:4.4.6

@@ -37,6 +37,7 @@ spec:
         app: media-frontend
       name: media-frontend
     spec:
+      runtimeClassName: kata-fc
       containers:
       - name: media-frontend
         image: yg397/media-frontend:xenial

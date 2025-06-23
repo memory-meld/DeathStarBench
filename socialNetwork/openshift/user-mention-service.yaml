@@ -35,6 +35,7 @@ spec:
         app: user-mention-service
       name: user-mention-service
     spec:
+      runtimeClassName: kata-fc
       containers:
       - name: user-mention-service
         image: deathstarbench/social-network-microservices

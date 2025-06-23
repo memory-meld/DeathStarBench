@@ -35,6 +35,7 @@ spec:
         app: user-timeline-redis
       name: user-timeline-redis
     spec:
+      runtimeClassName: kata-fc
       containers:
       - name: user-timeline-redis
         image: redis

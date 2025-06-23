@@ -37,6 +37,7 @@ spec:
         app: nginx-thrift
       name: nginx-thrift
     spec:
+      runtimeClassName: kata-fc
       containers:
       - name: nginx-thrift
         image: yg397/openresty-thrift:xenial

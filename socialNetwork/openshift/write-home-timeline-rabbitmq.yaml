@@ -42,6 +42,7 @@ spec:
         app: write-home-timeline-rabbitmq
       name: write-home-timeline-rabbitmq
     spec:
+      runtimeClassName: kata-fc
       containers:
       - name: write-home-timeline-rabbitmq
         image: rabbitmq

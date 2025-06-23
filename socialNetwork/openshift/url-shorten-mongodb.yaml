@@ -35,6 +35,7 @@ spec:
         app: url-shorten-mongodb
       name: url-shorten-mongodb
     spec:
+      runtimeClassName: kata-fc
       containers:
       - name: url-shorten-mongodb
         image: mongo:4.4.6

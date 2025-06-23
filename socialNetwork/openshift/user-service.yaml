@@ -35,6 +35,7 @@ spec:
         app: user-service
       name: user-service
     spec:
+      runtimeClassName: kata-fc
       containers:
       - name: user-service
         image: deathstarbench/social-network-microservices

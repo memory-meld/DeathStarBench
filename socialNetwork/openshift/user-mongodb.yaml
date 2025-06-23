@@ -35,6 +35,7 @@ spec:
         app: user-mongodb
       name: user-mongodb
     spec:
+      runtimeClassName: kata-fc
       containers:
       - name: user-mongodb
         image: mongo:4.4.6

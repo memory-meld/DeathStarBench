@@ -35,6 +35,7 @@ spec:
         app: post-storage-memcached
       name: post-storage-memcached
     spec:
+      runtimeClassName: kata-fc
       containers:
       - name: post-storage-memcached
         image: memcached

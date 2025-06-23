@@ -35,6 +35,7 @@ spec:
         app: social-graph-redis
       name: social-graph-redis
     spec:
+      runtimeClassName: kata-fc
       containers:
       - name: social-graph-redis
         image: redis

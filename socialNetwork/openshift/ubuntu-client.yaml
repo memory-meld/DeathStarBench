@@ -20,6 +20,7 @@ spec:
         app: ubuntu-client
       name: ubuntu-client
     spec:
+      runtimeClassName: kata-fc
       containers:
       # - name: ubuntu-client
       #   image: michaelirey/ubuntu-with-tools

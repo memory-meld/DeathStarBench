@@ -35,6 +35,7 @@ spec:
         app: social-graph-mongodb
       name: social-graph-mongodb
     spec:
+      runtimeClassName: kata-fc
       containers:
       - name: social-graph-mongodb
         image: mongo:4.4.6

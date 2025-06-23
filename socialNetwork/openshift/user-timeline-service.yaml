@@ -35,6 +35,7 @@ spec:
         app: user-timeline-service
       name: user-timeline-service
     spec:
+      runtimeClassName: kata-fc
       containers:
       - name: user-timeline-service
         image: deathstarbench/social-network-microservices

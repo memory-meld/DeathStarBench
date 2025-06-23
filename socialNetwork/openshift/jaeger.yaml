@@ -65,6 +65,7 @@ spec:
         app-name: jaeger
       name: jaeger-agent
     spec:
+      runtimeClassName: kata-fc
       containers:
       - name: jaeger-agent
         image: jaegertracing/all-in-one:latest

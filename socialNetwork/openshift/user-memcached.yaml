@@ -35,6 +35,7 @@ spec:
         app: user-memcached
       name: user-memcached
     spec:
+      runtimeClassName: kata-fc
       containers:
       - name: user-memcached
         image: memcached

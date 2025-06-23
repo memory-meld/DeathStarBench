@@ -37,6 +37,7 @@ spec:
         app: compose-post-service
       name: compose-post-service
     spec:
+      runtimeClassName: kata-fc
       containers:
       - name: compose-post-service
         image: deathstarbench/social-network-microservices

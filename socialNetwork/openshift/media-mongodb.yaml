@@ -35,6 +35,7 @@ spec:
         app: media-mongodb
       name: media-mongodb
     spec:
+      runtimeClassName: kata-fc
       containers:
       - name: media-mongodb
         image: mongo:4.4.6

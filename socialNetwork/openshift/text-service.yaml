@@ -35,6 +35,7 @@ spec:
         app: text-service
       name: text-service
     spec:
+      runtimeClassName: kata-fc
       containers:
       - name: text-service
         image: deathstarbench/social-network-microservices

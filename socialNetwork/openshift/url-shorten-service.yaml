@@ -35,6 +35,7 @@ spec:
         app: url-shorten-service
       name: url-shorten-service
     spec:
+      runtimeClassName: kata-fc
       containers:
       - name: url-shorten-service
         image: deathstarbench/social-network-microservices

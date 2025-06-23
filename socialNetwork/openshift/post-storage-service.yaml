@@ -35,6 +35,7 @@ spec:
         app: post-storage-service
       name: post-storage-service
     spec:
+      runtimeClassName: kata-fc
       containers:
       - name: post-storage-service
         image: deathstarbench/social-network-microservices

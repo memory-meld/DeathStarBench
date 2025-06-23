@@ -35,6 +35,7 @@ spec:
         app: social-graph-service
       name: social-graph-service
     spec:
+      runtimeClassName: kata-fc
       containers:
       - name: social-graph-service
         image: deathstarbench/social-network-microservices

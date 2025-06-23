@@ -37,6 +37,7 @@ spec:
         app: write-home-timeline-service
       name: write-home-timeline-service
     spec:
+      runtimeClassName: kata-fc
       containers:
       - name: write-home-timeline-service
         image: deathstarbench/social-network-microservices

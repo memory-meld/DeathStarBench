@@ -35,6 +35,7 @@ spec:
         app: unique-id-service
       name: unique-id-service
     spec:
+      runtimeClassName: kata-fc
       containers:
       - name: unique-id-service
         image: deathstarbench/social-network-microservices

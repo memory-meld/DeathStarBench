@@ -35,6 +35,7 @@ spec:
         app: media-service
       name: media-service
     spec:
+      runtimeClassName: kata-fc
       containers:
       - name: media-service
         image: deathstarbench/social-network-microservices

@@ -35,6 +35,7 @@ spec:
         app: url-shorten-memcached
       name: url-shorten-memcached
     spec:
+      runtimeClassName: kata-fc
       containers:
       - name: url-shorten-memcached
         image: memcached
